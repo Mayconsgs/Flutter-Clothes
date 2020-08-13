@@ -51,7 +51,8 @@ class _SingUpScreenState extends State<SingUpScreen> {
                   controller: _nameController,
                   decoration: InputDecoration(hintText: "Nome Completo"),
                   validator: (text) {
-                    if (text.isEmpty) return "Nome inválido";
+                    if (text.isEmpty) 
+                      return "Nome inválido";
                   },
                 ),
                 SizedBox(height: 16),

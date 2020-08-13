@@ -1,6 +1,6 @@
 # loja_flutter
 
-Appe de loja virtual com Flutter.
+App de loja virtual feito em Flutter.
 
 ## Getting Started
 

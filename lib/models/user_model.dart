@@ -35,7 +35,7 @@ class UserModel extends Model {
       password: pass,
     )
         .then((result) async {
-      firebaseUser = result as FirebaseUser;
+      firebaseUser = result;
       await _saveUserData(userData);
       onSuccess(); // Verificar isso aqui
       isLoading = false;

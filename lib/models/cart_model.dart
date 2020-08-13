@@ -4,9 +4,12 @@ import 'package:loja_flutter/datas/cart_product.dart';
 import 'package:loja_flutter/models/user_model.dart';
 import 'package:scoped_model/scoped_model.dart';
 
+// ignore: slash_for_doc_comments
 /**
- * Essa classe esta sendo utilizada para fazer todo o controle de produtos que estão no carrinho do usuário.
- */
+ * Essa classe esta sendo utilizada para fazer todo o 
+ * controle de produtos que estão no carrinho do usuário. 
+ * */
+
 class CartModel extends Model {
   UserModel user; // Usuário logado
 
@@ -18,16 +21,13 @@ class CartModel extends Model {
 
   bool isLoading = false; // Indica se algo está sendo carregado.
 
-  /**
-   * Construtor do CartModel
-   */
+  // Construtor do CartModel
+   
   CartModel(this.user) {
     if (this.user.isLoggedIn()) _loadCartItems();
   }
 
-  /**
-   * Permite usar o comando CartModel.of(context)
-   */
+  // Permite usar o comando CartModel.of(context)
   static CartModel of(BuildContext context) =>
       ScopedModel.of<CartModel>(context);
 

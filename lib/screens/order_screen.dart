@@ -27,7 +27,7 @@ class OrderScreen extends StatelessWidget {
               "Pedido realizado com sucesso",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
-            Text("Código do pedido: ${orderId}",
+            Text("Código do pedido: $orderId",
             style: TextStyle(fontSize: 16),),
 
           ],
